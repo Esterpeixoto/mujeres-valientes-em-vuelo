@@ -218,12 +218,14 @@ audio::-webkit-media-controls-enclosure {
 }
 
 .blockquote::after {
-    content: "\201C";
+    content: " ";
     top: 20px;
     left: 50%;
     margin-left: -100px;
     position: absolute;
-    border-bottom: 3px solid #bf0024;
+    border-bottom: 3px solid;
+    /* Cria uma transição direta entre as cores */
+    border-image: linear-gradient(to right, #ebee27 33%, #001aff 33%, #001aff 66%, #d10606 66%) 1;
     height: 3px;
     width: 200px;
 }
